@@ -1,0 +1,25 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  @include font();
+  overflow-x: hidden;
+  font-size: 16px;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum';
+  //color: #3c4143;
+}
+
+body {
+  @include font($font-400);
+  overflow-x: hidden;
+  height: 100%;
+  color: $text_common;
+}

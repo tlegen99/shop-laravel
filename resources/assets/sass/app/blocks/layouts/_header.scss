@@ -1,0 +1,14 @@
+.header-top {
+  position: relative;
+  font-size: 12px;
+  line-height: 16px;
+  color: $white;
+  background-color: $text_common;
+}
+
+.header-top__grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+}

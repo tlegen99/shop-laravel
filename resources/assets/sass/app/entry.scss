@@ -1,0 +1,19 @@
+// сброс стилей
+@import "common/reset";
+// стили шрифтов
+@import "entry-app-fonts";
+// вспомогательные переменные для стилей
+@import "common/vars";
+// файл с миксинами
+@import "common/mixins";
+// Silents
+@import "common/silents";
+// базовые стили
+@import "common/common";
+
+// Ширина сайта ROW
+@import "blocks/row";
+// Шапка сайта
+@import "blocks/layouts/header";
+// главная страница
+@import "blocks/main";

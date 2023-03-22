@@ -1,0 +1,8 @@
+// Ширина сайта
+.row {
+  @extend %clear-fix;
+  @extend %margin-center;
+  @extend %side-padding;
+  max-width: $max-site-width;
+  height: 100%;
+}
