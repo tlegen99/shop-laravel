@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  color: $common_color;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 5px;
+  
+  &.button_blue {
+    color: $white_color;
+    background-color: $bg_blue;
+  }
+  
+  &.button_green {
+    color: $white_color;
+    background-color: $button_color;
+  }
+}

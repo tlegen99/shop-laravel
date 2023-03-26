@@ -1,0 +1,41 @@
+.product__detail {
+  display: flex;
+  margin-top: 40px;
+}
+
+.product__detail__image {
+  max-width: 430px;
+  height: 480px;
+}
+
+.product__detail__info {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.product__detail__row {
+  color: $gray_color;
+  
+  span {
+    color: $common_color;
+  }
+}
+
+.product__detail__price {
+  
+  span {
+    @include font($font-600);
+    font-size: 18px;
+    line-height: 24px;
+    color: $bg_blue;
+  }
+}
+
+.product__detail__desc {
+  margin-top: 20px;
+}
+
+.product__detail__cart {
+  margin-top: 30px;
+  background-color: $button_color;
+}

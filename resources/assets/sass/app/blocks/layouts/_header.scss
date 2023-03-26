@@ -1,14 +1,34 @@
 .header-top {
   position: relative;
-  font-size: 12px;
-  line-height: 16px;
-  color: $white;
-  background-color: $text_common;
+  font-size: 14px;
+  line-height: 15px;
+  color: $white_color;
+  background-color: $common_color;
 }
 
 .header-top__grid {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 36px;
+  min-height: 40px;
+}
+
+.header-top__column {
+  
+  &.header-top__column_service {
+    flex: 1;
+    padding-left: 60px;
+  }
+}
+
+.header-top__logo {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header-top__service {
+  
+  > * {
+    color: $gray_color;
+    margin-right: 24px;
+  }
 }

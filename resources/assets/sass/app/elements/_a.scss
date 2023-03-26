@@ -1,0 +1,37 @@
+a {
+  transition: color .2s ease-out, border .2s ease-out, background-color .2s ease-out;
+  text-decoration: none;
+  position: relative;
+  display: inline;
+  outline: none;
+  
+  &:focus,
+  &:active,
+  &:hover {
+    transition: color .2s ease-in, border .2s ease-in, background-color .2s ease-in;
+    outline: none;
+  }
+}
+
+.link {
+  border-color: inherit;
+  
+  span {
+    transition: color .2s ease-out, border .2s ease-out, background-color .2s ease-out;
+    
+    &:focus,
+    &:active,
+    &:hover {
+      transition: color .2s ease-in, border .2s ease-in;
+    }
+  }
+}
+
+@media screen and (max-width: 1269px) {
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+}

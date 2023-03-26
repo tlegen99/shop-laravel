@@ -21,5 +21,14 @@ body {
   @include font($font-400);
   overflow-x: hidden;
   height: 100%;
-  color: $text_common;
+  color: $common_color;
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
