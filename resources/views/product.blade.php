@@ -11,7 +11,7 @@
             
             <div class="product__detail">
                 <div class="product__detail__image">
-                    <img src="images/products/phone/1/image.jpeg" alt="">
+                    <img src="/images/products/phone/1/image.jpeg" alt="">
                 </div>
                 
                 <div class="product__detail__info">

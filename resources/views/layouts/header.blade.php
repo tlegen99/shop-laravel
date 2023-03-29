@@ -9,9 +9,9 @@
                 </div>
                 <div class="header-top__column header-top__column_service">
                     <div class="header-top__service">
-                        <a href="/" class="link">Все товары</a>
-                        <a href="/categories" class="link">Категории</a>
-                        <a href="" class="link">Корзина</a>
+                        <a href="{!! route("index") !!}" class="link">Все товары</a>
+                        <a href="{!! route("categories") !!}" class="link">Категории</a>
+                        <a href="{!! route("basket") !!}" class="link">Корзина</a>
                     </div>
                 </div>
                 <div class="header-top__column">
