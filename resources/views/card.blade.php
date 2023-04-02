@@ -11,12 +11,13 @@
         {!! $product->price !!}
     </div>
     
-    <div class="products__item__buttons">
-        <a href="/" class="button button_blue">
+    <form action="{!! route('basket-add', $product) !!}" method="POST" class="products__item__buttons">
+        <button type="submit" role="button" class="button button_blue">
             В корзину
-        </a>
+        </button>
         <a href="{!! route('product', [$product->category->code, $product->code]) !!}" class="button detail">
             Подрбонее
         </a>
-    </div>
+        @csrf
+    </form>
 </div>
