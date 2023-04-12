@@ -20,11 +20,15 @@
   
   tbody {
     
+    tr:nth-child(2n-1) {
+      background-color: #F8F8F8;
+    }
+    
     td {
+      padding-left: 10px;
+      padding-right: 10px;
       
       &:nth-child(1) {
-        display: flex;
-        align-items: center;
         width: 40%;
         
         img {
@@ -74,5 +78,13 @@
         background-color: $button_color;
       }
     }
+    
+    .basket-sum {
+     height: 40px;
+    }
+  }
+  
+  .button {
+    margin-left: auto;
   }
 }

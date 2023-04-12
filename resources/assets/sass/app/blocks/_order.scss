@@ -1,0 +1,39 @@
+.order {
+
+  .order__text {
+    margin-top: 10px;
+    
+    &:first-child {
+      margin-top: 20px;
+    }
+  }
+}
+
+.order__form {
+  margin-top: 10px;
+  
+  > * {
+    
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.order__form__input {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  
+  .label {
+    width: 30%;
+  }
+  
+  .input {
+    width: 70%;
+    height: 30px;
+    padding: 5px 10px;
+    border: 1px solid $gray_color;
+    border-radius: 5px;
+  }
+}

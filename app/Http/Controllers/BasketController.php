@@ -18,9 +18,37 @@ class BasketController extends Controller
         return view('basket', ['order' => $order]);
     }
     
-    public function order()
+    public function basketConfirm(Request $request)
     {
-        return view('order');
+        $order_id = session('order_id');
+        
+        if (is_null($order_id)) {
+            return redirect()->route('index');
+        }
+        $order = Order::find($order_id);
+
+        if (!empty($request->name)) {
+            $order->name = $request->name;
+        }
+        if (!empty($request->phone)) {
+            $order->phone = $request->phone;
+        }
+        $order->status = 1;
+        $order->save();
+        
+        return redirect()->route('index');
+    }
+    
+    public function basketOrder()
+    {
+        $order_id = session('order_id');
+        
+        if (is_null($order_id)) {
+            return redirect()->route('index');
+        }
+        $order = Order::find($order_id);
+        
+        return view('order', ['order' => $order]);
     }
     
     public function basketAdd($product_id)

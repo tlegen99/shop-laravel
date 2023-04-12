@@ -52,12 +52,16 @@
                         </tr>
                     @endforeach
                 
-                    <tr>
-                        <td colspan="1">Общая стоимость:</td>
+                    <tr class="basket-sum">
+                        <td colspan="3">Общая стоимость:</td>
                         <td>{!! $order->getFullPrice() !!}</td>
                     </tr>
                 </tbody>
                 </table>
+                <br>
+                <a href="{!! route('basket-order') !!}" class="button button_green">
+                    Оформить заказ
+                </a>
             </div>
         </div>
     </div>
